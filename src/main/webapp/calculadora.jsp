@@ -1,6 +1,6 @@
 <a href="index.jsp">Volver</a>
 
-<h1>Calculadoras</h1>
+<h1>Calculadora</h1>
 
 
 
