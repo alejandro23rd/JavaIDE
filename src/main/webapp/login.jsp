@@ -32,7 +32,7 @@ h1{
   color:#AAAAAA;
   margin-top:10px;
   font-size:1em;
-  border-radius:5px;
+  border-radius:4px;
 }
 
 
