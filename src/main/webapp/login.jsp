@@ -35,23 +35,22 @@ h1{
   border-radius:4px;
 }
 
-
-
   </style>
-<%
-	String mensaje = (String)request.getAttribute("mensaje");
-	if(mensaje != null)
-	{
 
-	}
-%>
 
 <form action="login" method="post">
 	<div class="box">
 	<h1>Login</h1>
-	<input type="text" name="nombre" placeholder="Nombre usuario" required>
-	<input type="submit" value="Acceder" />
+	<input type="text" name="usuario" placeholder="Nombre usuario" required>
+	<input type="password" name="password" placeholder="contraseña" required>
+	<select name = "idioma">
+		<option value="es">Castellano</option>
+		<option value="eu">euskera</option>
+		<option value="en">ingles</option>
+	</select>
 	<input type="checkbox" name="recuerdame" value="2" checked>Recuerdame
+	<input type="submit" value="Acceder" />
+	<a href="https://es.wallapop.com/search?keywords=cafetera&min_sale_price=5&max_sale_price=20">Enlace de wallapop</a>
 	</div>
 </form>
 

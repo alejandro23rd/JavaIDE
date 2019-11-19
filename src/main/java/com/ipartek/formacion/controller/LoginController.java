@@ -39,14 +39,37 @@ public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-    	String Usuario = request.getParameter("nombre");
+    	//recibir parametros
+    	String usuario    = request.getParameter("usuario");
+    	String password   = request.getParameter("password");
+    	String idioma     = request.getParameter("idioma");
+    	String recuerdame = request.getParameter("recuerdame");
 		
-		if (Usuario.equals("Admin")) 
+    	
+		if ("admin".equalsIgnoreCase(usuario) && "admin".equalsIgnoreCase(password)) 
 		{
+			String mensaje = "";
+			switch (idioma) {
+			case "es":
+				mensaje = (recuerdame == null)?"Bienvenido":" Bienvenido, Seras recordado";
+				break;
+			case "eu":
+				mensaje = (recuerdame == null)?"Kaixo":"Kaixo, Seras recordado";
+				break;
+			case "en":
+				mensaje = (recuerdame == null)?"Welcome":"you will be remember";
+				break;
+			default:
+				break;
+			}
+			request.setAttribute("mensaje", mensaje);
 			request.getRequestDispatcher("login-exito.jsp").forward(request, response);
-		} else
+		}
+		
+		else
 		{
-			request.getRequestDispatcher("login-incorrecto.jsp").forward(request, response);
+			request.setAttribute("mensaje" , "Crecendiales incorrectas");
+			request.getRequestDispatcher("login.jsp").forward(request, response);
 		}
 	}
 }
