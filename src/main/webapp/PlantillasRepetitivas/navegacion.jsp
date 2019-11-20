@@ -15,11 +15,9 @@
             <li><a href="https://www.aulaclic.es/html/t_9_1.htm" target="_blank">aulaclic.com</a></li>
             <li><a href="https://flukeout.github.io/" target="_blank">juegodecomida.com</a></li>
             <li><a href="https://caniuse.com" target="_blank">caniuse.com</a></li>
-       	</ul>     	
-       	<ul>
-       		<li><a href="calculadora.jsp">Calculadora</a></li>
+            <li><a href="calculadora.jsp">Calculadora</a></li>
        		<li><a href="kaixo?nombre=pepe">Saludar a Pepe</a></li>
        		<li><a href="kaixo?nombre=Maria">Saludar a Maria</a></li>
        		<li><a href="login.jsp">Login de Java</a></li>
-       	</ul>
+       	</ul>     	
 </nav>
