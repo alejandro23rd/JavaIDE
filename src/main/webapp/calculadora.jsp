@@ -1,3 +1,7 @@
+<%@include file="PlantillasRepetitivas/cabecera.jsp" %>
+<%@include file="PlantillasRepetitivas/navegacion.jsp" %>
+
+
 <a href="index.jsp">Volver</a>
 
 <h1>Calculadora</h1>
@@ -19,3 +23,5 @@
 	<input type="submit" value="Calcular">
 	
 </form>
+
+<%@include file="PlantillasRepetitivas/pie.jsp" %>

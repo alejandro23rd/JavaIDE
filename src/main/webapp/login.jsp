@@ -1,18 +1,6 @@
-
+<%@include file="PlantillasRepetitivas/cabecera.jsp"%>
+<%@include file="PlantillasRepetitivas/navegacion.jsp"%>
 <style type="text/css">
-body{
-  font-family: 'Open Sans', sans-serif;
-  background:#3498db;
-  margin: 0 auto 0 auto;  
-  width:100%; 
-  text-align:center;
-  margin: 20px 0px 20px 0px;   
-}
-
-h1{
-  font-size:1.5em;
-  color:#525252;
-}
 
 .box{
   background:white;
@@ -37,10 +25,10 @@ h1{
 
   </style>
 
+<h1>Login</h1>
 
 <form action="login" method="post">
 	<div class="box">
-	<h1>Login</h1>
 	<input type="text" name="usuario" placeholder="Nombre usuario" required>
 	<input type="password" name="password" placeholder="contraseña" required>
 	<select name = "idioma">
@@ -53,5 +41,8 @@ h1{
 	<a href="https://es.wallapop.com/search?keywords=cafetera&min_sale_price=5&max_sale_price=20">Enlace de wallapop</a>
 	</div>
 </form>
+
+<%@include file="PlantillasRepetitivas/pie.jsp"%>
+
 
 

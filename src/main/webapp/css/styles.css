@@ -30,6 +30,7 @@
 	@import url('lanscape.css'), screen, projection; --> para PC
 */
 @import url("reset.css");
+@import url("normalize.css");
 
 body {
 	background-image: url(/helloweb/images/Fondo.jpg);
@@ -76,11 +77,13 @@ nav {
 	top: 0;
 }
 
-ul {
+nav ul {
 	background-color: #000040;
 	padding: 0px;
 	text-align: center;
+	
 }
+
 
 nav ul li {
 	background-color: #000040;
@@ -90,6 +93,7 @@ nav ul li {
 	font-size: 15px;
 	font-family: Arial;
 	color: #0099CC;
+	
 }
 
 a {
@@ -208,8 +212,8 @@ input[type="text"]:invalid {
 }
 
 span {
-	border: 3px dotted red;
-	padding: 5px;
+	border: 1px dotted red;
+	padding: 1px;
 }
 
 /* estilos para cajas de visualizacion */

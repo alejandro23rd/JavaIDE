@@ -1,5 +1,3 @@
-
-
 <%@include file="PlantillasRepetitivas/cabecera.jsp" %>
 <%@include file="PlantillasRepetitivas/navegacion.jsp" %>
 <%
@@ -15,4 +13,5 @@
 	cuerpo
 	<span class="fas fa-eye"></span>
 	cuerpo
+
 <%@include file="PlantillasRepetitivas/pie.jsp" %>

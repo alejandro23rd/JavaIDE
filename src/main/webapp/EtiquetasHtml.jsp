@@ -109,8 +109,4 @@
                 </pre>
 </section>
 
-<section>
-	<a href="/helloweb/index.jsp"> Indice</a>
-</section>
-
 <%@include file="PlantillasRepetitivas/pie.jsp"%>
