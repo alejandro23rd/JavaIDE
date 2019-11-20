@@ -4,23 +4,23 @@
 <h1>Formulario</h1>
 
 <section>
-<p>
-	usar siempre etiqueta
-	<code>form</code>
-	junto con boton de submit.
-</p>
-<p>
-	Atributo
-	<code>action</code>
-	sirve para indicar el nombre del controlador en el servidor.
-</p>
-<p>
-	El atributo
-	<code>name</code>
-	de un
-	<code>input</code>
-	sirve para especificar el nombre del parametro a enviar al servidor.
-</p>
+	<p>
+		usar siempre etiqueta
+		<code>form</code>
+		junto con boton de submit.
+	</p>
+	<p>
+		Atributo
+		<code>action</code>
+		sirve para indicar el nombre del controlador en el servidor.
+	</p>
+	<p>
+		El atributo
+		<code>name</code>
+		de un
+		<code>input</code>
+		sirve para especificar el nombre del parametro a enviar al servidor.
+	</p>
 </section>
 
 <form action="#" method="post">

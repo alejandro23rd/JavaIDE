@@ -12,5 +12,7 @@
 	//%20 indica un espacio en blanco
 	
 %>
-
+	cuerpo
+	<span class="fas fa-eye"></span>
+	cuerpo
 <%@include file="PlantillasRepetitivas/pie.jsp" %>

@@ -2,151 +2,8 @@
 <%@include file="PlantillasRepetitivas/navegacion.jsp"%>
 
 <style>
-span {
-	border: 3px dotted red;
-	padding: 5px;
-}
 
-p {
-	border: 1px solid blue;
-	padding: 5px;
-}
 
-.box1 {
-	box-sizing: border-box;
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	background-color: red;
-	border-radius: 10px;
-	font-size: 25px;
-	color: white;
-	text-align: center;
-}
-
-.box2 {
-	box-sizing: border-box;
-	display: block;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	background-color: blue;
-	border-radius: 10px;
-	color: white;
-	text-align: center;
-	font-size: 25px;
-	visibility: hidden;
-}
-
-.box3 {
-	box-sizing: border-box;
-	display: block;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	background-color: green;
-	border-radius: 10px;
-	color: white;
-	text-align: center;
-	font-size: 25px;
-}
-
-.box4 {
-	box-sizing: border-box;
-	display: block;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	background-color: red;
-	border-radius: 10px;
-	color: white;
-	text-align: center;
-	font-size: 25px;
-}
-
-.box5 {
-	box-sizing: border-box;
-	display: block;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	background-color: blue;
-	border-radius: 10px;
-	color: white;
-	text-align: center;
-	font-size: 25px;
-	display: none;
-}
-
-.box6 {
-	box-sizing: border-box;
-	display: block;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	background-color: green;
-	border-radius: 10px;
-	color: white;
-	text-align: center;
-	font-size: 25px;
-}
-
-.box7 {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	background-color: green;
-	border-radius: 10px;
-	position: relative;
-	top: 10px;
-	left: 10px;
-	z-index: 15;
-}
-
-.box8 {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	background-color: red;
-	border-radius: 10px;
-	position: relative;
-	top: 0px;
-	left: 0px;
-	z-index: 10;
-}
-
-.box9 {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	background-color: blue;
-	border-radius: 10px;
-	position: relative;
-	top: 33px;
-	left: -137px;
-	z-index: 5;
-}
-
-.box-texto {
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-}
-
-section {
-	border: 5px solid black;
-	background-color: rgb(216, 216, 216);
-	padding: 10px;
-	margin-bottom: 50px;
-}
 </style>
 
 <h1>Visualizacion</h1>
@@ -154,7 +11,7 @@ section {
 <!--Toda las etiquetas de html tienen una estructura de caja-->
 
 <section>
-	<h2>Elemntos en linea o bloque</h2>
+	<h2>Elementos en linea o bloque</h2>
 	<p class="prueba">
 		Display: es el atributo para gestionar si es linea o bloque<br />
 		(existen muchos mas displays, como el flexbox)

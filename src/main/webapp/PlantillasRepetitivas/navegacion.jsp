@@ -1,5 +1,6 @@
 <nav>
         <ul>
+        	<li><a href="/helloweb/index.jsp">Index</a></li>
             <li><a href="/helloweb/EtiquetasHtml.jsp">EtiquetasDeHtml</a></li>
             <li><a href="/helloweb/Visualizacion.jsp">Visualizacion</a></li>
             <li><a href="/helloweb/selectoresAvanzados.jsp">Selectores Avanzados</a></li>
@@ -19,5 +20,7 @@
        		<li><a href="kaixo?nombre=pepe">Saludar a Pepe</a></li>
        		<li><a href="kaixo?nombre=Maria">Saludar a Maria</a></li>
        		<li><a href="login.jsp">Login de Java</a></li>
+       		<li><a href="tel:+622097986">Telefono</a></li>
+            <li><a href="mailto:elcorreoquequieres@correo.com" target="_blank">emailto</a></li>
        	</ul>     	
 </nav>
