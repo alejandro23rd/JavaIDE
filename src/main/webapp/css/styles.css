@@ -7,137 +7,162 @@
 6º id y cosas particulares
 */
 
-body{
-    background-color: rgb(190, 190, 190);
+/* 8080 peurto del servidor tomcat
+	5500 puerto del servidor Visual Code
+	commit para guardar
+	push para subir al github
+	pull para bajar del github
+*/
+
+/*  si esta amarillo significa que no tiene cmbios
+	si tiene ">" ha habido una modificacion
+	si tiene "?" significa que es fichero nuevo
+*/
+
+/* si un enlace NO empieza por / es una url relativa desde donde este el proyecto
+	si un enlace empieza por / significa que la url empieza por el servidor
+
+*/
+body {
+	background-color: rgb(190, 190, 190);
 }
+
 h1 {
-    color: #0099CC;
-    font-family: courier;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+	color: #0099CC;
+	font-family: courier;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
 }
 
-h2{
-    color: rgb(0, 106, 141);
-    font-family: courier;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    text-align: left;
+h2 {
+	color: rgb(0, 106, 141);
+	font-family: courier;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	text-align: left;
 }
-p{
-    font-family: 'Times New Roman';
-    text-align: justify;
 
+p {
+	font-family: 'Times New Roman';
+	text-align: justify;
 }
 
 nav {
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    background-color: grey;
-    position: sticky;
-    top: 0;
-}
-ul{
-    background-color: grey;
-    padding: 5px;
-    text-align: center;
-
-}
-nav ul li{
-    background-color: grey;
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    font-size: 16px;
-    font-family: Arial;
-    color: #0099CC;
-    margin: auto;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	background-color: grey;
+	position: sticky;
+	top: 0;
 }
 
-a{
-    color: white;
+ul {
+	background-color: grey;
+	padding: 5px;
+	text-align: center;
 }
 
-section{
-    margin: 10px;
-    border: 1px solid black;
-    padding: 5px;
-    background-color: rgb(226, 226, 226);
+nav ul li {
+	background-color: grey;
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	font-size: 16px;
+	font-family: Arial;
+	color: #0099CC;
+	margin: auto;
+}
+
+a {
+	color: white;
+}
+
+form {
+	border: 1px solid grey;
+	padding: 20px;
+}
+
+section {
+	margin: 10px;
+	border: 1px solid black;
+	padding: 5px;
+	background-color: rgb(226, 226, 226);
 }
 
 .intro {
-    position: relative;
-    background-image: url("/pruebaTecnica/ejercicios/images/Office.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: gray;
-    height: 100vh;
-}
-.columna1{
-    margin: 100px;
+	position: relative;
+	background-image: url("/pruebaTecnica/ejercicios/images/Office.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: gray;
+	height: 100vh;
 }
 
+.columna1 {
+	margin: 100px;
+}
 
 td {
-    border: 1px solid #000000;
-    /* Abreviación */
-    text-align: center;
+	border: 1px solid #000000;
+	/* Abreviación */
+	text-align: center;
 }
 
 th {
-    border: 1px solid #000000;
-    text-transform: uppercase;
-    text-shadow: red;
+	border: 1px solid #000000;
+	text-transform: uppercase;
+	text-shadow: red;
 }
 
 td.hover {
-    background-color: pink;
+	background-color: pink;
 }
 
 .tachado {
-    text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 code {
-    color: red;
-    background-color: #888;
-    font-family: monospace;
+	color: red;
+	background-color: #888;
+	font-family: monospace;
 }
 
-footer{
-    position: fixed;
-    padding: 20px;
-    bottom: 0px;
-    background-color: rgb(207, 125, 125);
-    width: 100%;
+footer {
+	position: fixed;
+	padding: 20px;
+	bottom: 0px;
+	background-color: rgb(207, 125, 125);
+	width: 100%;
 }
 
-input[type="text"]{
-    padding: 2px 0 2px 5px;
+input[type="text"] {
+	padding: 2px 0 2px 5px;
 }
 
-input[type="text"]:valid{
-    color: green;
-    border: 1px solid green;
+input[type="text"]:valid {
+	color: green;
+	border: 1px solid green;
 }
 
-input[type="text"]:invalid{
-    color: red;
-    border: 1px solid red;
+input[type="text"]:invalid {
+	color: red;
+	border: 1px solid red;
 }
 
 code {
-    color: red;
-    background-color: rgb(233, 229, 229);
-    font-family: monospace;
+	color: red;
+	background-color: rgb(233, 229, 229);
+	font-family: monospace;
 }
+
+/* estilos del formulario  */
