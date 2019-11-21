@@ -31,9 +31,15 @@
 */
 @import url("reset.css");
 @import url("normalize.css");
+@import url("etiquetas.css");
+@import url("animaciones.css");
+@import url("layouts.css");
+@import url("clases.css");
+@import url("custom.css");
 
 body {
 	background-image: url(/helloweb/images/Fondo.jpg);
+	background-image: no-repeat;
 }
 
 h1 {
@@ -69,6 +75,12 @@ p {
 	text-align: justify;
 }
 
+.header {
+	margin: auto;
+	width: 500px;
+	font-family: Arial;
+}
+
 nav {
 	border-top: 5px solid black;
 	border-bottom: 5px solid black;
@@ -77,13 +89,11 @@ nav {
 	top: 0;
 }
 
-nav ul {
+nav li{
 	background-color: #000040;
-	padding: 0px;
 	text-align: center;
-	
+	list-style: none;
 }
-
 
 nav ul li {
 	background-color: #000040;
@@ -93,7 +103,6 @@ nav ul li {
 	font-size: 15px;
 	font-family: Arial;
 	color: #0099CC;
-	
 }
 
 a {
@@ -182,6 +191,13 @@ canvas {
 	display: block;
 }
 
+/* Layout */
+main {
+	max-width: 1024px; margin : auto;
+	margin-bottom: 50px;
+	margin: auto;
+}
+
 .fa-eye {
 	font-size: 20px;
 
@@ -217,7 +233,6 @@ span {
 }
 
 /* estilos para cajas de visualizacion */
-
 .box1 {
 	box-sizing: border-box;
 	display: inline-block;

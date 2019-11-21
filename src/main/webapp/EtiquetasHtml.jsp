@@ -1,112 +1,116 @@
 <%@include file="PlantillasRepetitivas/cabecera.jsp"%>
 <%@include file="PlantillasRepetitivas/navegacion.jsp"%>
 
-<h1>Etiquetas de HTML</h1>
-<section>
-	<h2>Esto es una lista OL (lista ordenada)</h2>
-	<ol>
-		<li>Este será el número 1.</li>
-		<li>Este será el 2.</li>
-		<li>Este será el 3. Y así sucesivamente.</li>
-	</ol>
-</section>
+<main>
+	<h1>Etiquetas de HTML</h1>
 
-<section>
-	<h2>Esto es una lista DL (lista definidad)</h2>
-	<dl>
 
-		<dt>Aquí va el término que definiremos</dt>
+	<section>
+		<h2>Esto es una lista OL (lista ordenada)</h2>
+		<ol>
+			<li>Este será el número 1.</li>
+			<li>Este será el 2.</li>
+			<li>Este será el 3. Y así sucesivamente.</li>
+		</ol>
+	</section>
 
-		<dd>Y aquí dentro irá la definición propiamente dicha.</dd>
+	<section>
+		<h2>Esto es una lista DL (lista definidad)</h2>
+		<dl>
 
-	</dl>
+			<dt>Aquí va el término que definiremos</dt>
 
-	<dl>
+			<dd>Y aquí dentro irá la definición propiamente dicha.</dd>
 
-		<dt>Aquí va la segunda definición</dt>
+		</dl>
 
-		<dd>Y aquí dentro irá la segunda definición, separada
-			automáticamente de la anterior.</dd>
+		<dl>
 
-	</dl>
-</section>
+			<dt>Aquí va la segunda definición</dt>
 
-<section>
-	<h2>Esto es una tabla</h2>
-	<table>
-		<tr>
-			<td>Linea Izquierda</td>
-			<td>Linea Derecha</td>
-		</tr>
-		<tr>
-			<td>Celda 1</td>
-			<td>Celda 2</td>
-		</tr>
+			<dd>Y aquí dentro irá la segunda definición, separada
+				automáticamente de la anterior.</dd>
 
-		<tr>
-			<td>Celda 3</td>
-			<td>Celda 4</td>
-		</tr>
+		</dl>
+	</section>
 
-		<tr>
-			<td>Celda 5</td>
-			<td>Celda 6</td>
-		</tr>
+	<section>
+		<h2>Esto es una tabla</h2>
+		<table>
+			<tr>
+				<td>Linea Izquierda</td>
+				<td>Linea Derecha</td>
+			</tr>
+			<tr>
+				<td>Celda 1</td>
+				<td>Celda 2</td>
+			</tr>
 
-		<tr>
-			<td>Celda 7</td>
-			<td>Celda 8</td>
-		</tr>
-		<tr>
-			<td>Celda 9</td>
-			<td>Celda 10</td>
-		</tr>
-	</table>
-</section>
+			<tr>
+				<td>Celda 3</td>
+				<td>Celda 4</td>
+			</tr>
 
-<section>
-	<h2>
-		Pulsar el boton para poner un 1==<span id=numero>0</span>
-	</h2>
-	<button onclick="Sumar()">Pulsar</button>
-</section>
+			<tr>
+				<td>Celda 5</td>
+				<td>Celda 6</td>
+			</tr>
 
-<section>
-	<h2>Asi ingresamos un video de youtube</h2>
-	<iframe width="560" height="315"
-		src="https://www.youtube.com/embed/v9s8E-HSdkk" frameborder="0"
-		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-		allowfullscreen></iframe>
-</section>
+			<tr>
+				<td>Celda 7</td>
+				<td>Celda 8</td>
+			</tr>
+			<tr>
+				<td>Celda 9</td>
+				<td>Celda 10</td>
+			</tr>
+		</table>
+	</section>
 
-<section>
-	<h2>Asi ingresamos un imagen</h2>
+	<section>
+		<h2>
+			Pulsar el boton para poner un 1==<span id=numero>0</span>
+		</h2>
+		<button onclick="Sumar()">Pulsar</button>
+	</section>
 
-	<img src="ejercicios/images/Office.jpg" border="1"
-		alt="Este es el ejemplo de un texto alternativo" width="400"
-		height="300">
-</section>
+	<section>
+		<h2>Asi ingresamos un video de youtube</h2>
+		<iframe width="560" height="315"
+			src="https://www.youtube.com/embed/v9s8E-HSdkk" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+	</section>
 
-<section>
-	<h2>Poner un texto tachado</h2>
-	<p>
-		<span class="tachado">que aparece tachado</span>
-	</p>
-</section>
+	<section>
+		<h2>Asi ingresamos un imagen</h2>
 
-<section>
-	<h2>Lista con p</h2>
-	<p>Las cosas que necesitarás están listadas aquí: - Una linterna. -
-		Una caja de fósforos. - Un cuchillo afilado.</p>
-</section>
+		<img src="ejercicios/images/Office.jpg" border="1"
+			alt="Este es el ejemplo de un texto alternativo" width="400"
+			height="300">
+	</section>
 
-<section>
-	<h2>Lista solo con pre</h2>
-	<pre>Las cosas que necesitarás están listadas aquí:
+	<section>
+		<h2>Poner un texto tachado</h2>
+		<p>
+			<span class="tachado">que aparece tachado</span>
+		</p>
+	</section>
+
+	<section>
+		<h2>Lista con p</h2>
+		<p>Las cosas que necesitarás están listadas aquí: - Una linterna.
+			- Una caja de fósforos. - Un cuchillo afilado.</p>
+	</section>
+
+	<section>
+		<h2>Lista solo con pre</h2>
+		<pre>Las cosas que necesitarás están listadas aquí:
                 - Una linterna.
                 - Una caja de fósforos.
                 - Un cuchillo afilado.
                 </pre>
-</section>
+	</section>
+</main>
 
 <%@include file="PlantillasRepetitivas/pie.jsp"%>

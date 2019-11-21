@@ -1,0 +1,29 @@
+.header {
+	margin: auto;
+	width: 500px;
+	font-family: Arial;
+}
+
+nav {
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	background-color: #000040;
+	position: sticky;
+	top: 0;
+}
+
+nav li{
+	background-color: #000040;
+	text-align: center;
+	list-style: none;
+}
+
+nav ul li {
+	background-color: #000040;
+	display: inline-block;
+	padding: 5px;
+	text-align: center;
+	font-size: 15px;
+	font-family: Arial;
+	color: #0099CC;
+}
