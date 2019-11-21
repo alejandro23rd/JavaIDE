@@ -4,7 +4,6 @@
 <main>
 	<h1>Etiquetas de HTML</h1>
 
-
 	<section>
 		<h2>Esto es una lista OL (lista ordenada)</h2>
 		<ol>
@@ -85,7 +84,7 @@
 	<section>
 		<h2>Asi ingresamos un imagen</h2>
 
-		<img src="ejercicios/images/Office.jpg" border="1"
+		<img src="/helloweb/images/Fondo.jpg" border="1"
 			alt="Este es el ejemplo de un texto alternativo" width="400"
 			height="300">
 	</section>
