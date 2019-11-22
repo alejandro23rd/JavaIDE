@@ -133,6 +133,21 @@
 	text-decoration: line-through;
 }
 
+/* parallax */
+.parallax{
+
+  background-image: url(/helloweb/images/Office.jpg);  
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* IDs */
 #listaUL {
 	background-color: rgb(226, 226, 226);
@@ -146,4 +161,56 @@
 #IconoGitHub {
 	margin: auto;
 	width: 100px;
+}
+
+/*  menu del index*/
+.menu {
+	text-align: center;
+	margin: 20px;
+
+}
+
+.container {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	
+}
+
+.image {
+	display: block;
+	width: 200px;
+	height: 200px;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 17px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 1px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: justify;
 }

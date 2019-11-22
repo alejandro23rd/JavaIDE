@@ -38,7 +38,7 @@
 $(document).ready(function() { //esperar qe este todo el DOM cargado y listo
 	$('.tabla').DataTable();
 	responsive: true,
-	language:
+	language: en;
 	{		
 		"sProcessing":     "Procesando...",
         "sLengthMenu":     "Mostrar _MENU_ registros",
