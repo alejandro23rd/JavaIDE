@@ -2,16 +2,25 @@
   <a href="/helloweb/index.jsp" class="active">Indice</a>
   
   <div class="dropdown">
-    <button class="dropbtn">Html<i class="fa fa-caret-down"></i>
+    <button class="dropbtn">Html Basico<i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
     	
       	<a href="/helloweb/EtiquetasHtml.jsp">EtiquetasDeHtml</a>
       	<a href="/helloweb/Visualizacion.jsp">Visualizacion</a>
       	<a href="/helloweb/posicionamiento.jsp">Posicionamiento</a>
-      	<a href="/helloweb/game.jsp">Game Arkanoid</a>
+      	<a href="/helloweb/selectores.jsp">Selectores</a>
       	<a href="/helloweb/formulario.jsp">Formulario</a>
+    </div>
+  </div>
+  
+    <div class="dropdown">
+    <button class="dropbtn">Html Avanzado<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">   	
+      	<a href="/helloweb/game.jsp">Game Arkanoid</a>
       	<a href="/helloweb/dataTables.jsp">DataTables</a>
+      	<a href="/helloweb/mediaQuerys.jsp">mediaQuerys</a>
     </div>
   </div>
   
@@ -35,17 +44,9 @@
       	<a href="https://www.w3schools.com/" target="_blank">w3schools.com</a>
       	<a href="https://www.aulaclic.es/html/t_9_1.htm"target="_blank">aulaclic.com</a>
       	<a href="https://caniuse.com" target="_blank">caniuse.com</a>
-    </div>
-  </div>
-  
-  <div class="dropdown">
-    <button class="dropbtn">Selectores<i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-    	<a href="/helloweb/selectoresBasicos.jsp">SelectoresBasicos</a>
-      	<a href="/helloweb/selectoresAvanzados.jsp">SelectoresAvanzados</a>
-      	<a href="/helloweb/selectoresEspecifidad.jsp">SelectoresEspecifidad</a>
-      	<a href="/helloweb/PseudoSelectores.jsp">PseudoSelectores</a>
+      	<a href="https://mycolor.space/" target="_blank">Mycolor.com</a>
+      	
+      	
     </div>
   </div>
   

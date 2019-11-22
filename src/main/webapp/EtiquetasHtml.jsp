@@ -84,9 +84,9 @@
 	<section>
 		<h2>Asi ingresamos un imagen</h2>
 
-		<img src="/helloweb/images/Fondo.jpg" border="1"
-			alt="Este es el ejemplo de un texto alternativo" width="400"
-			height="300">
+		<img src="/helloweb/images/FotoInsertada.jpg" border="1"
+			alt="Este es el ejemplo de un texto alternativo"
+			width="250" height="140">
 	</section>
 
 	<section>

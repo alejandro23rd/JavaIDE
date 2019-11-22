@@ -21,79 +21,101 @@
 	background-color: teal;
 }
 
-section a{
+section a {
 	color: Blue;
 }
 </style>
-<h1>Flexbox</h1>
 
-<section>
-	<dl>
+<main>
+	<h1>Flexbox</h1>
 
-		<dt>
-			<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-				target="_blank">Guia de flexBox</a>
-		</dt>
+	<section>
+		<dl>
 
-		<dd>Link del la pagina de css-tricks para aprender los conceptos completos del flexbox</dd>
+			<dt>
+				<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+					target="_blank">Guia de flexBox</a>
+			</dt>
 
-	</dl>
+			<dd>Link del la pagina de css-tricks para aprender los conceptos
+				completos del flexbox</dd>
 
-	<dl>
+		</dl>
 
-		<dt>
-			<a href="https://flexboxfroggy.com/#es" target="_blank">Juego de
-				flexBox</a>
-		</dt>
+		<dl>
 
-		<dd>Link del juego de las ranas para aprender los conceptos completos del flexbox</dd>
+			<dt>
+				<a href="https://flexboxfroggy.com/#es" target="_blank">Juego de
+					flexBox</a>
+			</dt>
 
-	</dl>
+			<dd>Link del juego de las ranas para aprender los conceptos
+				completos del flexbox</dd>
 
-	<dl>
+		</dl>
 
-		<dt>
-			<a href="http://www.falconmasters.com/css/guia-completa-flexbox/"
-				target="_blank">Juego de flexBox</a>
-		</dt>
+		<dl>
 
-		<dd>Link del la pagina de falconmaster para aprender los conceptos completos del flexbox</dd>
+			<dt>
+				<a href="http://www.falconmasters.com/css/guia-completa-flexbox/"
+					target="_blank">Juego de flexBox</a>
+			</dt>
 
-	</dl>
-</section>
+			<dd>Link del la pagina de falconmaster para aprender los
+				conceptos completos del flexbox</dd>
 
-<section>
-	<p>	Flex es una nueva forma de<code>display</code>
-		de css3 totalmente nueva para que las cajas no sean ni inline o block </p>
-	<p>	Sirve para distribuir los elementos contenidos en una
-		etiqueta con<code>display</code>: flex</p>
-</section>
+		</dl>
+	</section>
+
+	<section>
+		<p>
+			Flex es una nueva forma de
+			<code>display</code>
+			de css3 totalmente nueva para que las cajas no sean ni inline o block
+		</p>
+		<p>
+			Sirve para distribuir los elementos contenidos en una etiqueta con
+			<code>display</code>
+			: flex
+		</p>
+	</section>
 
 
-<div class="flexboxHijos">
-	<div>hijo1</div>
-	<div>hijo2</div>
-	<div>hijo3</div>
-	<div>hijo4</div>
-	<div>hijo5</div>
-	<div>hijo6</div>
-</div>
+	<div class="flexboxHijos">
+		<div>hijo1</div>
+		<div>hijo2</div>
+		<div>hijo3</div>
+		<div>hijo4</div>
+		<div>hijo5</div>
+		<div>hijo6</div>
+	</div>
 
-<section>
-	<p>Justify.content: flex-start --> alinea las cajas arriba de la pagina </p>
-	<p>Justify.content: flex-end --> alinea las cajas abajo de la pagina</p>
-	<p>Justify.content: center -->alinea las cajas en el centro de la pagina</p>
-	<p>Justify.content: baseline --> alinea las cajas sobre la linea de los textos</p>
-	<p>Justify.content: stretch --> te ocupa toda la pantalla en el eje vertical</p>
-</section>
+	<section>
+		<p>Justify.content: flex-start --> alinea las cajas arriba de la
+			pagina</p>
+		<p>Justify.content: flex-end --> alinea las cajas abajo de la
+			pagina</p>
+		<p>Justify.content: center -->alinea las cajas en el centro de la
+			pagina</p>
+		<p>Justify.content: baseline --> alinea las cajas sobre la linea
+			de los textos</p>
+		<p>Justify.content: stretch --> te ocupa toda la pantalla en el
+			eje vertical</p>
+	</section>
 
-<section>
-	<p>align-content: flex-start --> alinea las cajas a la izquierda de la pagina </p>
-	<p>align-content: flex-end --> alinea las cajas a la derecha de la pagina</p>
-	<p>align-content: center -->alinea las cajas en el centro de la pagina</p>
-	<p>align-content: stretch --> te ocupa toda la pantalla en el eje horizontal</p>
-	<p>align-content: space-between --> la primera línea está al comienzo del contenedor mientras que la última está al final</p>
-	<p>align-content: space-around --> elementos distribuidos uniformemente con igual espacio alrededor de cada línea</p>
-</section>
-
+	<section>
+		<p>align-content: flex-start --> alinea las cajas a la izquierda
+			de la pagina</p>
+		<p>align-content: flex-end --> alinea las cajas a la derecha de la
+			pagina</p>
+		<p>align-content: center -->alinea las cajas en el centro de la
+			pagina</p>
+		<p>align-content: stretch --> te ocupa toda la pantalla en el eje
+			horizontal</p>
+		<p>align-content: space-between --> la primera línea está al
+			comienzo del contenedor mientras que la última está al final</p>
+		<p>align-content: space-around --> elementos distribuidos
+			uniformemente con igual espacio alrededor de cada línea</p>
+	</section>
+</main>
 <%@include file="PlantillasRepetitivas/pie.jsp"%>

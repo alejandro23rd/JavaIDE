@@ -127,3 +127,23 @@
 	height: 100px;
 	border: 2px solid black;
 }
+
+/* estilo personas para un parrafo de etiquetas.jsp */
+.tachado {
+	text-decoration: line-through;
+}
+
+/* IDs */
+#listaUL {
+	background-color: rgb(226, 226, 226);
+	text-align: left;
+}
+
+#listaUL a {
+	font-color: black;
+}
+
+#IconoGitHub {
+	margin: auto;
+	width: 100px;
+}

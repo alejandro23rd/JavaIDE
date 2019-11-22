@@ -1,46 +1,40 @@
 <%@include file="PlantillasRepetitivas/cabecera.jsp"%>
 <%@include file="PlantillasRepetitivas/navegacion.jsp"%>
 
+<main>
+
+	<h1>Posicionamiento</h1>
+
+	<section>
+		<h2>Relativo</h2>
+		<p>variante del posicionamiento normal que consiste en posicionar
+			una caja según el posicionamiento normal y después desplazarla
+			respecto de su posición original.</p>
+	</section>
+
+	<section>
+		<h2>Sticky - css3</h2>
+		<p>Mantiene los elementos posicionados como "fijos" o "relativos"
+			en función de cómo aparezcan en la ventana gráfica. Como resultado,
+			el elemento se "bloquea" cuando es necesario mientras se desplaza.</p>
+	</section>
+
+	<section>
+		<h2>Fixed</h2>
+		<p>corresponde al posicionamiento fijo. El desplazamiento se
+			establece de la misma forma que en el posicionamiento absoluto, pero
+			en este caso el elemento permanece inamovible en la pantalla.</p>
+	</section>
+
+	<section>
+		<h2>Absoluto</h2>
+		<p>
+			la posición de una caja se establece de forma absoluta respecto de su
+			<b>elemento contenedor</b> y el resto de elementos de la página
+			ignoran la nueva posición del elemento
+		</p>
+
 <style>
-div img {
-	position: absolute;
-	bottom: 5px;
-	right: 5px;
-}
-
-.contenedor {
-	overflow: hidden;
-}
-
-.contenedor .texto {
-	background-color: rgb(128, 128, 128);
-	position: absolute;
-}
-</style>
-
-<h1>Posicionamiento</h1>
-
-<section>
-	<h2>Relativo</h2>
-</section>
-
-<section>
-	<h2>Fixed</h2>
-</section>
-
-<section>
-	<h2>Sticky - css3</h2>
-</section>
-
-<section>
-	<h2>Absoluto</h2>
-	<p>
-		la posición de una caja se establece de forma absoluta respecto de su
-		<b>elemento contenedor</b> y el resto de elementos de la página
-		ignoran la nueva posición del elemento
-	</p>
-
-	<style>
 .contenedor {
 	/* acordaros siempre de que sea relative el contenedor */
 	position: relative;
@@ -84,18 +78,19 @@ div img {
 }
 </style>
 
-	<div class="contenedor">
-		<span class="absoluto">1</span> <img
-			src="http://lorempixel.com/400/400/" alt="imagen aleatoria">
+		<div class="contenedor">
+			<span class="absoluto">1</span> <img
+				src="http://lorempixel.com/400/400/" alt="imagen aleatoria">
 
-		<div class="texto">
-			<h3>titulo</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Quibusdam sapiente qui earum placeat commodi quidem hic ex! Quidem
-				qui assumenda velit pariatur rerum facere cum? Voluptatibus minima
-				qui vero architecto!</p>
+			<div class="texto">
+				<h3>titulo</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Quibusdam sapiente qui earum placeat commodi quidem hic ex! Quidem
+					qui assumenda velit pariatur rerum facere cum? Voluptatibus minima
+					qui vero architecto!</p>
+			</div>
 		</div>
-	</div>
 
-</section>
+	</section>
+</main>
 <%@include file="PlantillasRepetitivas/pie.jsp"%>
