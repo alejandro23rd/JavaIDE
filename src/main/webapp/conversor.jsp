@@ -1,26 +1,30 @@
-<%@include file="PlantillasRepetitivas/cabecera.jsp" %>
-<%@include file="PlantillasRepetitivas/navegacion.jsp" %>
-
 <h1>Conversor</h1>
+
+<p>Conversor de metros a pies</p>	
+
+<p style="color:red;">${mensaje}</p>
 
 <form action="convertir" method="post">
 
-
-
-	<label for="operacion">Inserta la medida en metros a convertir</label><br>
+	<input type="text" name="metros" value="${metros}" placeholder="Escribe los metros"/>
 	
-	<input type="text" name="metros" placeholder="metros"><br>
+	<input type="text" name="pies" value="${(resultado == null )? 0 : resultado }"/>
 
-	<input type="submit" value="convertir">
-	
-	
+	<input type="submit" value="Convetir" />
+
 </form>
 
-Resultado:
-
-<% 
-	float resultado = (float)request.getAttribute("resultado");
+Resultado:  
+<%
+	// los atributos deben ser casteados, y no es obligatoriamente String
+	float resultado = 0;
+	if ( request.getAttribute("resultado") != null ){
+		
+		resultado = (float)request.getAttribute("resultado");
+		
+	}
+	//pintar en el HTML
+	out.print(resultado);
 %>
 
-
-<%@include file="PlantillasRepetitivas/pie.jsp" %>
+<p style="color:green;">Resultado de forma abreviada ${resultado}</p>

@@ -8,17 +8,28 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class CalculadoraController
+ * Servlet implementation class ConversorController
  */
 @WebServlet("/convertir")
 public class ConversorController extends HttpServlet {
+	
 	private static final long serialVersionUID = 1L;
+	public static final double METROS_PIES = 3.26;
        
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ConversorController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doPost(request, response);
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -26,14 +37,39 @@ public class ConversorController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		float resultado = 0;
+		// siempre en formato String los parametros
 		
-		if(request.getAttribute("resultado") !=null ){
-			resultado = (float)request.getAttribute("resultado");
-		}
+		String metros = request.getParameter("metros");
+		
+		try {
+				
+			// logica negocio
+			
+			if ( "".equals(metros) ) {				
+				request.setAttribute("mensaje", "Por favor dime los metros" );				
+			}else {
+						
+				float dMetros = Float.parseFloat(metros);
+				float resultado = (float) (dMetros * METROS_PIES);				
+				
+				request.setAttribute("resultado", resultado  );
+			}
+	
+		}catch( NumberFormatException e) {			
+			
+			request.setAttribute("mensaje", "Escribe un numero valido" );
+			
+		}catch (Exception e) {
+			
+			request.setAttribute("mensaje", "Perdon pero tenemos un fallo!!!!" );
+			
+		}finally {		
+			// ir a la JSP o vista
+			request.setAttribute("metros", metros );
+			request.getRequestDispatcher("conversor.jsp").forward(request, response);
+		}	
 		
 		
-		request.getRequestDispatcher("conversor.jsp").forward(request, response);
 	}
 
 }
