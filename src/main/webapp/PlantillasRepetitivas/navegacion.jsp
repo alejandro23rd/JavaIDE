@@ -29,6 +29,7 @@
     </button>
     <div class="dropdown-content">
     	<a href="calculadora.jsp">Calculadora</a>
+    	<a href="conversor.jsp">Conversor</a>
 		<a href="kaixo?nombre=pepe">Saludar a Pepe</a>
 		<a href="kaixo?nombre=Maria">Saludar a Maria</a>
 		<a href="login.jsp">Login de Java</a>
