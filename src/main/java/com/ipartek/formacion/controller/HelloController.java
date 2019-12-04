@@ -29,67 +29,65 @@ public class HelloController extends HttpServlet
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
 		//peticion del cliente
-				String userAgent = request.getHeader("User-Agent");		
-				String http = request.getProtocol();
+		String userAgent = request.getHeader("User-Agent");		
+		String http = request.getProtocol();
 				
-				//parametros		
-				String nombre = request.getParameter("nombre");      
-				String password = request.getParameter("password");  
+		//parametros		
+		String nombre = request.getParameter("nombre");      
+		String password = request.getParameter("password");  
 				
-				boolean isMovil = false; 
+		boolean isMovil = false; 
 				
-				if ( userAgent.toLowerCase().contains("mobile") ) {
-					isMovil = true;
-				}
+		if ( userAgent.toLowerCase().contains("mobile") ) {
+			isMovil = true;
+		}
 				
-				//respuesta
+		//respuesta
 				
-				response.setContentType("text/html");
-				response.setCharacterEncoding("utf-8");
-				PrintWriter out = response.getWriter();
+		response.setContentType("text/html");
+		response.setCharacterEncoding("utf-8");
+		PrintWriter out = response.getWriter();
 				
 				
-				if ( USUARIO.equals(nombre) && PASSWORD.equals(password)) {
+		if ( USUARIO.equals(nombre) && PASSWORD.equals(password)) {
 				
-					//por defecto response code 200
-					response.setStatus(200);
+			//por defecto response code 200
+			response.setStatus(200);
 					
-					out.print("<html lang=\"es\">");
-					out.print("<head>");
-					out.print("<meta charset=\"utf-8\">");
-					out.print("<title>Título del sitio</title> ");
-					out.print("</head>");
-					out.print("<body style=\"font-size:36px;\">");
-					out.print("<h1>Página Ejemplo1</h1>");
-					out.print("<ol>");
-					out.print("<li>Version: " + http + "</li>");
-					out.print("<li>Tu nagevador es: " + userAgent + "</li>");
-					out.print("<li>Nombre: " + nombre + "</li>");
-					out.print("<li>Movil: " + isMovil + "</li>");
-					out.print("</ol>");
-					out.print("</body>");
-					out.print("</html>");
+			out.print("<html lang=\"es\">");
+			out.print("<head>");
+			out.print("<meta charset=\"utf-8\">");
+			out.print("<title>Título del sitio</title> ");
+			out.print("</head>");
+			out.print("<body style=\"font-size:36px;\">");
+			out.print("<h1>Página Ejemplo1</h1>");
+			out.print("<ol>");
+			out.print("<li>Version: " + http + "</li>");
+			out.print("<li>Tu nagevador es: " + userAgent + "</li>");
+			out.print("<li>Nombre: " + nombre + "</li>");
+			out.print("<li>Movil: " + isMovil + "</li>");
+			out.print("</ol>");
+			out.print("</body>");
+			out.print("</html>");
 					
-				}else {
+		}else {
 					
-					if ( TETERA.equals(nombre) ) {
+			if ( TETERA.equals(nombre) ) {
 						
-						response.setStatus(418);
-						out.print("<h1>TXU TXU</h1>");
-						out.print("<img src=\"https://evert.meulie.net/wp-content/uploads/2016/03/Teapot.png\" alt=\"imagen tetera\" />"); 
+				response.setStatus(418);
+				out.print("<h1>TXU TXU</h1>");
+				out.print("<img src=\"https://evert.meulie.net/wp-content/uploads/2016/03/Teapot.png\" alt=\"imagen tetera\" />"); 
 						
-					}else {			
-						// no autorizado
-						response.setStatus(401);
-						out.print("<h1>NO AUTORIZADO</h1>");
-					}	
-				}	
+			}else {			
+				// no autorizado
+				response.setStatus(401);
+				out.print("<h1>NO AUTORIZADO</h1>");
+			}	
+		}	
 				
-				out.flush();
-				
-				
-				
-			}
+		out.flush();
+			
+	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{

@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class HelloController2
- * Vamos ha relizar el mismo ejercicio pero con una JSP para la response automatica
+ * Vamos ha realizar el mismo ejercicio pero con una JSP para la response automatica
  * 
  * @see HelloController para ver como hacer esto sin JSP
  * 
@@ -21,7 +21,7 @@ public class HelloController2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final String TETERA = "tetera";
 	private static final String USUARIO = "pepe";
-	private static final String PASSWORD = "123456";
+	private static final String PASSWORD = "123";
 	private static final String VISTA_RESUMEN = "resumen.jsp";
 	private static final String VISTA_NO_PERMISO = "nopermiso.jsp";
 	private static final String VISTA_TETERA = "tetera.jsp";
@@ -29,6 +29,7 @@ public class HelloController2 extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		//recibir parametos
@@ -50,14 +51,28 @@ public class HelloController2 extends HttpServlet {
 		request.setAttribute("nombre", nombre);
 		
 		// request interna del servidor
-		request.getRequestDispatcher(VISTA_RESUMEN).forward(request, response);
 		
+			
+
 		
+		if ( USUARIO.equals(nombre) && PASSWORD.equals(password)) {
+			
+			request.setAttribute("nombre", nombre);
+			request.getRequestDispatcher(VISTA_RESUMEN).forward(request, response);
+					
+		}else {
+					
+			if ( TETERA.equals(nombre) ) {
+				
+				request.getRequestDispatcher(VISTA_TETERA).forward(request, response);	
+				
+			}else {			
+				
+				request.getRequestDispatcher(VISTA_NO_PERMISO).forward(request, response);				
+			}	
+		}			
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		
 		doGet(request, response);
 	}

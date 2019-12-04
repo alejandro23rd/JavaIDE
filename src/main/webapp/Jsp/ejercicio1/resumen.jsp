@@ -5,13 +5,16 @@
 	<title>Document</title>
 </head>
 <body>
+
+<%
+String nombre = (String) request.getAttribute("nombre");
+
+%>
 	
 	<h1>Resumen</h1>
 	
-	
 	<ol>
-		<li>Nombre: ${nombre}</li>
-		<li>Password: ${password}</li>
+		<li>Bienvenido: ${nombre}</li>
 	</ol>
 	
 </body>
