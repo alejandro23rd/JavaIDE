@@ -6,11 +6,11 @@
     </button>
     <div class="dropdown-content">
     	
-      	<a href="/helloweb/EtiquetasHtml.jsp">EtiquetasDeHtml</a>
-      	<a href="/helloweb/Visualizacion.jsp">Visualizacion</a>
-      	<a href="/helloweb/posicionamiento.jsp">Posicionamiento</a>
-      	<a href="/helloweb/selectores.jsp">Selectores</a>
-      	<a href="/helloweb/formulario.jsp">Formulario</a>
+      	<a href="/helloweb/Html/EtiquetasHtml.jsp">EtiquetasDeHtml</a>
+      	<a href="/helloweb/Html/Visualizacion.jsp">Visualizacion</a>
+      	<a href="/helloweb/Html/posicionamiento.jsp">Posicionamiento</a>
+      	<a href="/helloweb/Html/selectores.jsp">Selectores</a>
+      	<a href="/helloweb/Html/formulario.jsp">Formulario</a>
     </div>
   </div>
   
@@ -18,9 +18,9 @@
     <button class="dropbtn">Html Avanzado<i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">   	
-      	<a href="/helloweb/game.jsp">Game Arkanoid</a>
-      	<a href="/helloweb/dataTables.jsp">DataTables</a>
-      	<a href="/helloweb/mediaQuerys.jsp">mediaQuerys</a>
+      	<a href="/helloweb/Html/game.jsp">Game Arkanoid</a>
+      	<a href="/helloweb/Html/dataTables.jsp">DataTables</a>
+      	<a href="/helloweb/Html/mediaQuerys.jsp">mediaQuerys</a>
     </div>
   </div>
   
@@ -28,12 +28,10 @@
     <button class="dropbtn">TemasDeJava<i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-    	<a href="calculadora.jsp">Calculadora</a>
-    	<a href="/helloweb/conversor.jsp">Conversor</a>
-		<a href="kaixo?nombre=pepe">Saludar a Pepe</a>
-		<a href="kaixo?nombre=Maria">Saludar a Maria</a>
-		<a href="login.jsp">Login de Java</a>
-		<a href="flexbox.jsp">Flexbox</a>
+    	<a href="/helloweb/Html/calculadora.jsp">Calculadora</a>
+    	<a href="/helloweb/Html/conversor.jsp">Conversor</a>
+		<a href="/helloweb/Html/login.jsp">Login de Java</a>
+		<a href="/helloweb/Html/flexbox.jsp">Flexbox</a>
     </div>
   </div>
 </div>
